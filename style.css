@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+/* font-family: 'Kanit', sans-serif; */
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* header */
+header{
+    z-index: 1000;
+    padding: 0 20px;
+    font-size: 16px;
+    font-family: 'Kanit', sans-serif;
+    background-color: rgb(0, 0, 0,0.95);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    width: 100%;
+    position: fixed;
+}
+.logo{
+    height: 38%;
+}
+.logo img{
+    height: 100%;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu div{
+    padding: 15px;
+}
+.menu .l{
+    color: grey;
+    font-size: 16px;
+    font-weight: lighter;
+}
+.menu >div>i{
+    padding-right: 8px;
+}
+/* header */
+
+/* content  */
+iframe{
+    height: 100vh;
+}
+.video_preview{
+    position: relative;
+}
+.topic{
+    letter-spacing: 4px;
+    font-size: 32px;
+    color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+}
+.play_btn{
+    box-shadow: 0 0 30px rgb(77, 77, 77);
+    padding: 14px 30px;
+    background-color: rgba(75, 156, 255, 0.7);
+}
+.topic a{
+    color: white;
+    text-decoration: none;
+}
+/* content  */
