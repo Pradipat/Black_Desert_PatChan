@@ -45,14 +45,26 @@ header{
 .menu >div>i{
     padding-right: 8px;
 }
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+.menu a:hover{
+    color:rgb(131, 105, 75);
+}
 /* header */
 
 /* content  */
 iframe{
     height: 100vh;
 }
-.video_preview{
+.video_preview_container{
+    width: 100%;
     position: relative;
+}
+.clip{
+    width: 100%;
+    height: 100%;
 }
 .topic{
     letter-spacing: 4px;
@@ -70,11 +82,101 @@ iframe{
 }
 .play_btn{
     box-shadow: 0 0 30px rgb(77, 77, 77);
-    padding: 14px 30px;
+    padding: 25px 65px;
     background-color: rgba(75, 156, 255, 0.7);
+    transition: 0.15s;
+}
+.play_btn:hover{
+    background-color: rgba(75, 156, 255);
 }
 .topic a{
+    text-shadow: 0 0 50px black;
+    font-size: 14px;
     color: white;
     text-decoration: none;
 }
 /* content  */
+
+/* news */
+.news_container{
+    margin: 60px 0;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.news_item{
+    width:  31%;
+    box-shadow: 0 0 10px rgb(191, 191, 191);
+    position: relative;
+    text-align: center;
+}
+.news_picture{
+    width: 100%;
+}
+.news_picture img{
+    width: 100%;
+}
+.news_tag{
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    top: 0;
+    background-color: azure;
+    padding: 0.7% 4%;
+}
+.news_tag_ann{
+    background-color: rgb(203, 176, 147 , 0.5);
+}
+.news_tag_up{
+    background-color: rgb(164, 54, 54,0.5);
+}
+.news_tag_note{
+    background-color: rgb(62, 56, 49,0.5);
+}
+.date{
+    color: rgb(159, 159, 159);
+}
+
+/* topup_container */
+.topup_container{
+    display: flex;
+    width: 100%;
+}
+.topup_guild{
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    width: 50%;
+    background-color: rgb(41, 74, 103);
+}
+.topup_news{
+    width: 50%;
+    background-color: rgb(108, 86, 57);
+}
+.topup_grid{
+    box-shadow: 0 0 50px 1px rgb(34, 48, 60);
+    margin: 50px;
+    margin-right: 50px;
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.topup_grid_item{
+    border-bottom: solid 2px rgb(26, 37, 46);
+    padding: 0px;
+    background-color: rgb(38, 69, 96);
+    box-shadow: 0 50px 50px 1px rgb(34, 48, 60);
+}
+.topup_grid_item1{
+    display: flex;
+    flex-direction: column;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.topup_grid_item1 img{
+    width: 100%;
+}
+.topup_grid_item .info{
+    color: rgb(171, 197, 220);
+    font-size: 12px;
+}
