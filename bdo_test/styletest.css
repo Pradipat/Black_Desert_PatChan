@@ -1,0 +1,16 @@
+.picture{
+    display: flex;
+    height: 100px;
+    width: 200px;
+    background-color: red;
+    overflow: hidden;
+    
+}
+.picture img{
+    width: 200%;
+    height: 150px;
+    object-position: left;
+}
+.picture img:hover{
+    transform: scale(2);
+}
