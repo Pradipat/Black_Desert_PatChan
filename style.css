@@ -244,6 +244,7 @@ iframe{
     background-position: center;
 }
 .player_count_container h1{
+    text-align: center;
     font-size: 50px;
     margin: 0 auto;
     margin-top: 100px;
@@ -337,6 +338,11 @@ iframe{
     color: rgb(255, 255, 255,0.7);
     font-size: 30px;
 }
+.class_card a:hover{
+    background-color: rgb(255, 255, 255,0.7);
+    color: #484848;
+    transition: 0.2s;
+}
 .warrior{
     background-image: url(https://s1.pearlcdn.com/TH/contents/img/portal/main/main_character_class_0.jpg);
 }
@@ -397,12 +403,14 @@ iframe{
 
 /* dowload_container */
 .dowload_container{
-    padding-left: 100px;
     display: flex;
     align-items: center;
     height: 450px;
     background-image: url(https://s1.pearlcdn.com/TH/contents/img/portal/main/main_join_us.jpg);
     background-position: center;
+}
+.box-load{
+    margin-left: 5%;
 }
 .dowload_container .box-load{
     text-align: center;
@@ -523,3 +531,10 @@ iframe{
     background-color: rgb(136, 136, 136);
 }
 /* footer */
+
+@media only screen and (max-width: 960px) {
+    /* For tablets: */
+    .contact{
+        background-color: red;
+    }
+}
